@@ -3,6 +3,7 @@ const verCarrito = document.getElementById ("mostrarCarrito")
 const modalContainer = document.getElementById ("modal-container")
 const cantidadProductos = document.getElementById("cantidadProductos")
 
+
 const productos = [ 
     {
         id: 1,
@@ -47,6 +48,13 @@ const productos = [
 ];
 
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+const getProducts = async () =>{
+    const response = await fetch ("productos.json");
+    const data = await response.json();
+    console.log(data);
+}
+getProducts();
 
 productos.forEach((producto) => {
     let contenido= document.createElement("div");
@@ -147,12 +155,6 @@ const pintarCarrito = () => {
     eliminarProductos.addEventListener("click", () => {
         eliminar(producto.id)
     })
-    //let eliminarProductos = document.createElement("span");
-    //eliminarProductos.innerText = "Eliminar producto"
-    //eliminarProductos.className ="eliminar-productos";
-    //carritoContent.appendChild(eliminarProductos);
-
-    //eliminarProductos.addEventListener("click", () => eliminar(producto.id))
     });
 
     
@@ -162,12 +164,36 @@ const pintarCarrito = () => {
     totalcompra.className = "total-content";
     totalcompra.innerHTML = `El total a pagar es: ${total} $`;
     modalContainer.appendChild(totalcompra);
+
+    const botonCompras = document.createElement("h2")
+    botonCompras.innerHTML = "Comprar"
+    botonCompras.className = "boton-comprar"
+    botonCompras.addEventListener("click", () =>{
+        Swal.fire({
+            title: 'Estas seguro?',
+            text: "La compra esta a punto de finalizar!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Si, acepto!'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire(
+                'Compra con exito!',
+                'Gracias por confiar en Biodiet',
+                'success'
+              )
+            }
+          })
+        modalContainer.style.display = "none";
+        guardarLocal();
+        contarCarrito();
+    });
+    modalContainer.appendChild(botonCompras);
 }
 
 verCarrito.addEventListener("click", pintarCarrito);
-
-
-
 
 const eliminar = (id) =>{
     const encontrarId = carrito.find ((element) => element.id == id);

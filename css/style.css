@@ -184,3 +184,8 @@
 .restar{
     cursor: pointer;
 }
+
+.boton-comprar{
+    cursor: pointer;
+    background-color: red;
+}
