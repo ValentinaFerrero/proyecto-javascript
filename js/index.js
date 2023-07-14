@@ -51,8 +51,7 @@ let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 const getProducts = async () =>{
     const response = await fetch ("productos.json");
-    const data = await response.json();
-    console.log(data);
+    productos = await response.json();
 }
 getProducts();
 
@@ -182,7 +181,8 @@ const pintarCarrito = () => {
               Swal.fire(
                 'Compra con exito!',
                 'Gracias por confiar en Biodiet',
-                'success'
+                'success',
+                carrito = []
               )
             }
           })
