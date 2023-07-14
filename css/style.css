@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar-container{
+    position: sticky;
+    z-index: 3;
+    top: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    background-color: rgb(19, 19, 19);
+}
+.navbar-logo{
+    justify-self: start;
+    margin-left: 20px;
+    color: white;
+    margin-top: 4vh;
+    cursor: pointer;
+}
+
+.mostrar-carrito{
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: 3.5vh;
+    cursor: pointer;
+
+}
+
+.cantidadProductos{
+    background-color: yellow;
+    color: black;
+    font-size: 10px;
+    padding: 5px;
+    top: 40px;
+    right: 15px;
+    position: absolute;
+    display: none;
+    border-radius: 50%;
+}
+
+.banner{
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1543208541-0961a29a8c3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+}
+.banner-conteiner{
+    text-align: center;
+    padding: 15% 0;
+}
+.banner h1{
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 3px rgb(152, 155, 155);
+    font-size: 70px;
+}
+.banner p{
+    font-size: 30px;
+    color: white;
+    text-shadow: 1px 1px 3px rgb(152, 155, 155);
+
+}
+
+
+.tienda-content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 30px;
+    gap: 20px;
+}
+.card{
+    box-shadow: 0px 4px 8px rgb(19, 19, 19);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.card > img{
+    width: 100%;
+    height: 350px;
+}
+.precio{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+.card button{
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.card button:hover{
+    opacity: 0.7;
+}
+
+.pie{
+    color: white;
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+    gap: 50px;
+}
+
+
+.modal-container{
+    width: 80%;
+    margin: 0 10%;
+    max-height: 80vh;
+    color: white;
+    background-color: rgb(24, 23, 23);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 0;
+    top: 12vh;
+    scrollbar-color: none;
+}
+
+.modal-container::-webkit-scrollbar{
+    display: none;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+.modal-header-titulo{
+    justify-self: start;
+}
+
+.modal-header-button{
+    cursor: pointer;
+}
+
+.modal-container > .modal-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 120px;
+}
+
+.modal-container > div > img{
+    height: 320px;
+    width: 280px;
+}
+
+.total-content{
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+
+.eliminar-productos{
+    cursor:pointer;
+}
+
+.sumar{
+    cursor: pointer;
+}
+.restar{
+    cursor: pointer;
+}

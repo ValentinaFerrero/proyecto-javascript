@@ -1,0 +1,37 @@
+ [
+    {
+        "id": 1,
+        "nombre": "Cereales",
+        "precio": 200,
+        "descripcion": "Cereales como almohaditas, arroz inflado, copitos de maiz, bolitas de chocoltaes, etc",
+        "img": "https://plus.unsplash.com/premium_photo-1675237626442-cb1af9f49a92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+        "id": 2,
+        "nombre": "Frutos secos",
+        "precio": 650,
+        "descripcion": "almendra, avellana, cacahuete, castaña, dátil, nuez, pasas, etc",
+        "img": "https://images.unsplash.com/photo-1600189020840-e9918c25269d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+        "id": 3,
+        "nombre": "Especias",
+        "precio": 380,
+        "descripcion": "Anís, Canela, Cardamomo, Cilantro, Comino, Cúrcuma, Nuez moscada, etc",
+       "img": "https://images.unsplash.com/photo-1615485500704-8e990f9900f7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80"
+    },
+    {
+        "id": 4,
+        "nombre": "Suplementos",
+        "precio": 1000,
+        "descripcion": "Los suplementos dietéticos son productos que contienen un «ingrediente alimenticio» destinado a complementar la alimentación.",
+        "img": "https://images.unsplash.com/photo-1670850756988-a1943aa0e554?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=484&q=80"
+    },
+    {
+        "id": 5,
+        "nombre": "Productos para celiacos",
+        "precio": 740,
+        "descripcion": "Maíz (harina de maíz, sémola de maíz y polenta etiquetada como libre de gluten, Lino, Harinas sin gluten, Maíz precocido (maíz), etc",
+        "img": "https://images.unsplash.com/photo-1586137712370-9b450509c587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+    }
+]
